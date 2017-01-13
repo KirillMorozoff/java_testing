@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kmorozov001.javatesting.ArticleYesNo">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="   JavaTesting"
+        android:id="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:background="@color/accent_material_light"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editText3"
+        android:background="#007380"
+        android:padding="10dp"
+        android:layout_above="@+id/scroll"
+        android:layout_alignParentEnd="false"
+        android:gravity="center_vertical"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+        android:gravity="left|center_vertical|center"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editText4"
+        android:layout_toStartOf="@+id/editText4"
+        android:background="#005daf"
+        android:padding="10dp"
+        android:layout_above="@+id/scroll"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false"
+        android:gravity="left|center_vertical|center"
+        android:background="#9b0000"
+        android:padding="10dp"
+        android:layout_above="@+id/scroll"
+        android:textAlignment="center" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/editText4"
+        android:layout_alignEnd="@+id/editText4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:shrinkColumns="0,1"
+            tools:context="com.example.kmorozov001.javatesting.ArticleActivity"
+            android:weightSum="1">
+
+
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentStart="false"
+                    android:isScrollContainer="true"
+
+                    />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/ok"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ok"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentStart="false"
+                    android:gravity="center" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
